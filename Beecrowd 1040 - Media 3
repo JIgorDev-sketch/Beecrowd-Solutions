@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main(){
+	float nota1, nota2, nota3, nota4, nota_exame, media, media_pos_exame;
+	
+	scanf("%f %f %f %f", &nota1, &nota2, &nota3, &nota4);
+	
+	media = (nota1 * 2 + nota2 * 3 + nota3 * 4 + nota4 * 1) / 10; 
+	
+	if(media >= 7){
+	   printf("Media: %.1f\n", media);
+	   printf("Aluno aprovado.\n");
+	} 
+	
+	else if(media >= 5 && media < 7){
+	   scanf("%f", &nota_exame);
+	   
+	   printf("Media: %.1f\n", media);
+	 
+	   printf("Aluno em exame.\n");
+	
+	   printf("Nota do exame: %.1f\n", nota_exame);
+	
+       media_pos_exame = (nota_exame + media) / 2;
+    
+        if(media_pos_exame >= 5){
+           printf("Aluno aprovado.\n");
+           printf("Media final: %.1f\n", media_pos_exame);
+	    }
+
+        else{
+           printf("Aluno reprovado.\n");
+           printf("Media final: %.1f\n", media_pos_exame);
+    	}
+     }
+     
+    else{
+	    printf("Media: %.1f\n", media);
+	    printf("Aluno reprovado.\n");
+    }
+     
+return 0;  
+}
