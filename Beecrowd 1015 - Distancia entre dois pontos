@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	double pontox1, pontox2, pontoy1, pontoy2, distancia_total, distanciaX, distanciaY;
+	
+    scanf("%lf %lf", &pontox1, &pontoy1);
+	scanf("%lf %lf", &pontox2, &pontoy2);
+	
+	
+	distanciaX = pow(pontox2 - pontox1, 2);
+	distanciaY = pow(pontoy2 - pontoy1, 2);
+	
+	distancia_total = sqrt(distanciaX + distanciaY);
+	
+	printf("%.4lf\n", distancia_total);
+	
+return 0;
+}
