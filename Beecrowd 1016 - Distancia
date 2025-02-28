@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+	int distancia_do_carroY;
+	
+	scanf("%d", &distancia_do_carroY);
+	
+	printf("%d minutos\n", distancia_do_carroY * 2); //a proporção da velocidade é que a cada 2 minutos, o carro se aproxima 1 km do do outro carro. 
+	
+return 0;	
+}
