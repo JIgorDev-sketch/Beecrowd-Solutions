@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define pi 3.14159
+int main(){
+	double ladoA, ladoB, ladoC;
+	
+	scanf("%lf %lf %lf", &ladoA, &ladoB, &ladoC);
+	
+	printf("TRIANGULO: %.3lf\n", (ladoA * ladoC) / 2); //no triangulo, o ladoA é a base e o ladoC é a altura (de acordo com a questão)
+	printf("CIRCULO: %.3lf\n", pi * ladoC * ladoC); //o ladoC é o raio
+	printf("TRAPEZIO: %.3lf\n", ((ladoA + ladoB) * ladoC) / 2); //ladoA e ladoB são as bases e ladoC é a altura
+	printf("QUADRADO: %.3lf\n", ladoB * ladoB); //o ladoB sera o lado usado
+	printf("RETANGULO: %.3lf\n", ladoA * ladoB); //usaremos ladoA = base e ladoB = altura
+	
+return 0;
+}
