@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+	float pontox, pontoy;
+	
+	scanf("%f %f", &pontox, &pontoy);
+	
+	if(pontox == 0 && pontoy == 0)
+	printf("Origem\n");
+	
+	else if(pontoy == 0 && pontox != 0)
+	printf("Eixo X\n");
+	
+	else if(pontox == 0 && pontoy != 0)
+	printf("Eixo Y\n");
+	
+	else if(pontox > 0 && pontoy > 0)
+	printf("Q1\n");
+	
+	else if(pontox < 0 && pontoy > 0)
+	printf("Q2\n");
+	
+	else if(pontox < 0 && pontoy < 0)
+	printf("Q3\n");
+	
+	else
+	printf("Q4\n");
+
+return 0;	
+}
