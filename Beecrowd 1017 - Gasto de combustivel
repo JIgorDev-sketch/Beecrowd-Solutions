@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+	int hora, km_por_hora;
+	float distancia;
+	
+	scanf("%d", &hora);
+	scanf("%d", &km_por_hora);
+	
+	distancia = km_por_hora * hora;
+	
+    printf("%.3lf\n", distancia / 12);
+
+return 0;
+}
