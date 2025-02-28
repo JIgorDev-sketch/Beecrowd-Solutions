@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+	double notaA, notaB, notaC;
+	
+	scanf("%lf", &notaA);
+	scanf("%lf", &notaB);
+	scanf("%lf", &notaC);
+	
+	if(notaA <= 10 && notaB <= 10 && notaC <= 10){
+		printf("MEDIA = %.1lf\n", (notaA * 2 + notaB * 3 + notaC * 5) / 10);
+	}
+		
+return 0;	
+}
